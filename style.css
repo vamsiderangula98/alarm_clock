@@ -1,0 +1,60 @@
+
+html{
+    margin:0px;
+    padding:0px;
+}
+
+#alarm{
+    /* background-color:grey; */
+    display:flex;
+    flex-direction:row;
+     flex-wrap:wrap; 
+    position:relative;
+    left:3vw;
+    top:3vh;
+    width:95vw;
+    height:95vh;
+}
+#displayclock{
+    /* background-color:red; */
+    width:40%;
+    height:35%;
+    margin:4px;
+    padding:2px;
+    flex-grow:1;
+}
+#timebox,#datebox{
+    font-size: 20px;
+    font-weight: bolder;
+    font-style:normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#00807a;
+}
+#alarmsetting{
+    /* background-color:blue; */
+    width:40%;
+    height:35%;
+    margin:4px;
+    padding:2px;
+    flex-grow:3;
+
+}
+#alarmlist{
+    /* background-color:yellow; */
+    width:40%;
+    height:55%;
+    margin:4px;
+    padding:2px;
+    flex-grow:3;
+    order:2;
+}
+#mytunes{
+    /* background-color: green; */
+    width:40%;
+    height:55%;
+    margin:4px;
+    padding:2px;
+    flex-grow:1;
+    order:1;
+
+}
