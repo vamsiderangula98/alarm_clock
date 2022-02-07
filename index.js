@@ -2,12 +2,6 @@ var today, currentTime, alarms,currentDate,audio;
 
 // array for storing alarms
 alarms = [];
- var audio1 = new Audio('https://samplelib.com/lib/preview/mp3/sample-15s.mp3');
- var audio2= new Audio('https://samplelib.com/lib/preview/mp3/sample-6s.mp3');
-var audio3= new Audio('https://samplelib.com/lib/preview/mp3/sample-9s.mp3');
-var audio4= new Audio('https://samplelib.com/lib/preview/mp3/sample-12s.mp3');
-var audio5= new Audio('https://samplelib.com/lib/preview/mp3/sample-3s.mp3');
-
 
 var setAlarm = document.querySelector('.setAlarm');
   
@@ -81,7 +75,7 @@ setAlarm.addEventListener('submit', (event) => {
 const alarmsList = document.getElementById('alarmlist');
 function showAlarm(newAlarm) {
     
-    const html =`<li > ${newAlarm} &nbsp;
+    const html =`<li >${newAlarm} &nbsp;
                     <button class="btn btn-danger" id="dlt-button" value='${newAlarm}' onclick= 'remove(this.value)'>Delete Alarm</button>
                     </li>`
                 
@@ -196,9 +190,10 @@ var settimer=document.querySelector('.settimerfields');
 settimer.addEventListener('submit',(event)=>{
     event.preventDefault();
     remainingTime=settimer.rtime.value;
-   
+    countContainer.innerHTML = remainingTime;
+    
 });
-// var remainingTime=30;
+
 
 
 
@@ -247,7 +242,9 @@ stoptimerButton.onclick = stopTimer;
 // function to display time
 const renderTime = () => {
   // decement time
+  if(remainingTime>0){
   remainingTime -= 1;
+  }
   // render count on the screen
   countContainer.innerHTML = remainingTime;
   // timeout on zero

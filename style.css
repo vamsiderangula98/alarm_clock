@@ -2,10 +2,18 @@
 html{
     margin:0px;
     padding:0px;
+    font-size: 12px;
 }
  h2{
     color:lightgreen;
+    
    
+}
+
+
+ol{
+  font-size:30px;
+  text-decoration-color:orange;
 }
 
 #alarm{
@@ -21,14 +29,15 @@ html{
     height:95vh;
     border:2px solid black;
     overflow: hidden;
-     border-radius:2rem 2rem; */
+     border-radius:2rem 2rem; 
 }
 #displayclock{
-    /* background-color:red; */
+    
     width:40%;
     height:30%;
-    /* margin:4px;
-    padding:2px; */
+    margin:2px;
+    padding:2px;
+   
     flex-grow:1;
 }
 #timebox,#datebox{
@@ -40,19 +49,21 @@ html{
     color:#00807a;
     background-color:wheat;
     border-radius:2rem 2rem;
-    width:55%;
+    width:50%;
+    height:40px;
+    
     border: 2px solid yellow;
     text-align:center;
 }
 #alarmsetting{
-  /* background-color: purple;    */
-    width:55%;
+ 
+    width:50%;
     height:30%;
-    /* margin:4px;
-    padding:2px; */
-    flex-grow:3;
-    
-
+    flex-grow:1;
+    margin:2px;
+    padding:2px;
+   
+  
 }
 ol{
     color:yellowgreen;
@@ -61,47 +72,51 @@ ol{
     border:2px solid yellow;
     border-radius:2rem 2rem;
     background-color: wheat;
-    
+  
 
 }
 
 #myalarms{
-    /* background-color:yellow; */
     font-weight: bolder;
-    width:35%;
+    width:30%;
     height:65%;
     margin:4px;
     padding:4px;
-    flex-grow:3;
+    flex-grow:1;
     order:2;
+    margin:2px;
+    padding:2px;
     
 }
 #stopwatchandtimer{
-    /* background-color: green; */
+   
     width:60%;
     height:65%;
-    /* margin:4px;
-    padding:2px; */
     flex-grow:1;
     order:1;
     display: flex;
     flex-direction: row;
+    margin:2px;
+    padding:2px;
+   
 
 }
 #stopwatch {
     display: grid;
     justify-items: center;
     grid-row-gap: 23px;
-    width:50%;
+    width:40%;
     padding-top: 15px;
+    flex-grow: 1;
+    
   }
   .circle {
     display: flex;
     justify-content: center;
     align-items: center;
   
-    height:100px;
-    width:100px;
+    height:130px;
+    width:130px;
   
     border: 2px solid white;
     border-radius: 50%;
@@ -144,65 +159,73 @@ color:blue;
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height:100%;
-    width:50%;
+    width:40%;
+    flex-grow:1;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
- /* background-color: aqua;    */
+    align-content: center;
+    
+ 
 }
 #settimer{
     width:90%;
-    height:15%;
-    
-
-    background-color: wheat;
+    height:18%;
+     text-align: center;
 }
-#settimer input{
+    #settimer>h2{
+      text-align: center;
+}
+#rtime{
     background-color:wheat;
-    /* border-radius: 50%; */
+  
     border: 2px solid green;
     border-radius:2rem 2rem;
-    
-    width: 50%;
-    height:50%;
+    text-align: center;
+    width:25%;
+    height:1 em;
+
 }
+
 
 
 
 #countdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position:relative;
+  left=20%;
+  
   color: #0e2c4c;
   font-size: 70px;
-  width: 65%;
-  height: 40%;
+  width:130px;
+  height:130px;
   background-color: #e7d9fc;
   border-radius: 50%; 
+  align-self: center;
   
-  text-align: center;
 }
 
 #countdown-number{
-    width:95%;
-    height:95%;
+    width:inherit;
+    height:inherit;
     border-radius:50%;
-
     font-size: 40px;
     font-weight: 500;
     font-family:sans-serif;
     position: relative;
-    top:35%;
+    padding:35px 0px 0px 32px;
+
     
 }
 
 .action-list {
-  display: flex;
-  gap: 30px;
-  margin-top: 30px;
+  display:flex;
+  margin:5px;
   width:90%;
   height:21%;
+  align-content: center;
+  justify-content: space-around;
+  
+
 }
 .action-list button {
   border: none;
@@ -211,4 +234,5 @@ color:blue;
   width: 60px;
   height: 60px;
   cursor: pointer;
+  background-color:pink;
 }
