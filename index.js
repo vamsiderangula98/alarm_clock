@@ -81,7 +81,7 @@ setAlarm.addEventListener('submit', (event) => {
 const alarmsList = document.getElementById('alarmlist');
 function showAlarm(newAlarm) {
     
-    const html =`<li >vamsi ${newAlarm} 
+    const html =`<li > ${newAlarm} &nbsp;
                     <button class="btn btn-danger" id="dlt-button" value='${newAlarm}' onclick= 'remove(this.value)'>Delete Alarm</button>
                     </li>`
                 
@@ -177,7 +177,86 @@ function timeToString(time) {
   playButton.addEventListener("click", start);
   pauseButton.addEventListener("click", pause);
   resetButton.addEventListener("click", reset);
-let changecolor=document.getElementById("playButton");
-changecolor.addEventListener('click',function(){
-time
+
+
+// Select Countdown container
+const countContainer = document.getElementById("countdown-number");
+
+// Select action buttons
+const starttimerButton = document.getElementById("starttimer");
+const stoptimerButton = document.getElementById("stoptimer");
+const resettimerButton = document.getElementById("resettimer");
+
+// Select timeout Audio element
+const timeoutAudio = document.getElementById("timeout_audio");
+
+// variable to store count
+var remainingTime;
+var settimer=document.querySelector('.settimerfields');
+settimer.addEventListener('submit',(event)=>{
+    event.preventDefault();
+    remainingTime=settimer.rtime.value;
+   
 });
+// var remainingTime=30;
+
+
+
+// variable to store time interval
+var timer;
+
+// Variable to track whether timer is running or not
+var isStopped = true;
+
+// Function to start Timer
+const startTimer = () => {
+  if (isStopped) {
+    isStopped = false;
+    countContainer.innerHTML = remainingTime;
+    timer = setInterval(renderTime, 1000);
+  }
+};
+
+// Function to stop Timer
+const stopTimer = () => {
+  isStopped = true;
+  if (timer) {
+    clearInterval(timer);
+  }
+};
+
+// Function to reset Timer
+const resetTimer = () => {
+  isStopped = true;
+  clearInterval(timer);
+
+remainingTime=0;
+
+  countContainer.innerHTML = remainingTime;
+};
+
+// Initialize timeout sound
+timeoutAudio.src = "http://soundbible.com/grab.php?id=1252&type=mp3";
+timeoutAudio.load();
+
+// Attach onclick event to buttons
+starttimerButton.onclick = startTimer;
+resettimerButton.onclick = resetTimer;
+stoptimerButton.onclick = stopTimer;
+
+// function to display time
+const renderTime = () => {
+  // decement time
+  remainingTime -= 1;
+  // render count on the screen
+  countContainer.innerHTML = remainingTime;
+  // timeout on zero
+  if (remainingTime === 0) {
+    isStopped = true;
+    clearInterval(timer);
+    // Play audio on timeout
+    timeoutAudio.play();
+    remainingTime=settimer.rtime.value;
+
+  }
+};

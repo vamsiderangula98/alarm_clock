@@ -3,12 +3,13 @@ html{
     margin:0px;
     padding:0px;
 }
-h2{
+ h2{
     color:lightgreen;
+   
 }
 
 #alarm{
-    /* background-color:grey; */
+     /* background-color:grey;  */
     background-color:darkblue;
     display:flex;
     flex-direction:row;
@@ -19,18 +20,20 @@ h2{
     width:95vw;
     height:95vh;
     border:2px solid black;
-    border-radius:2rem 2rem;
+    overflow: hidden;
+     border-radius:2rem 2rem; */
 }
 #displayclock{
     /* background-color:red; */
     width:40%;
-    height:35%;
-    margin:4px;
-    padding:2px;
+    height:30%;
+    /* margin:4px;
+    padding:2px; */
     flex-grow:1;
 }
 #timebox,#datebox{
-    font-size: 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
     font-weight: bolder;
     font-style:normal;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -42,29 +45,31 @@ h2{
     text-align:center;
 }
 #alarmsetting{
-     
-    width:40%;
-    height:35%;
-    margin:4px;
-    padding:2px;
+  /* background-color: purple;    */
+    width:55%;
+    height:30%;
+    /* margin:4px;
+    padding:2px; */
     flex-grow:3;
+    
 
 }
 ol{
     color:yellowgreen;
 }
-input{
+.setAlarm input{
     border:2px solid yellow;
     border-radius:2rem 2rem;
     background-color: wheat;
+    
 
 }
 
 #myalarms{
     /* background-color:yellow; */
     font-weight: bolder;
-    width:40%;
-    height:57%;
+    width:35%;
+    height:65%;
     margin:4px;
     padding:4px;
     flex-grow:3;
@@ -73,28 +78,30 @@ input{
 }
 #stopwatchandtimer{
     /* background-color: green; */
-    width:40%;
-    height:55%;
-    margin:4px;
-    padding:2px;
+    width:60%;
+    height:65%;
+    /* margin:4px;
+    padding:2px; */
     flex-grow:1;
     order:1;
+    display: flex;
+    flex-direction: row;
 
 }
 #stopwatch {
     display: grid;
     justify-items: center;
     grid-row-gap: 23px;
-    width: 80%;
-    padding-top: 25px;
+    width:50%;
+    padding-top: 15px;
   }
   .circle {
     display: flex;
     justify-content: center;
     align-items: center;
   
-    height:150px;
-    width: 150px;
+    height:100px;
+    width:100px;
   
     border: 2px solid white;
     border-radius: 50%;
@@ -132,3 +139,76 @@ color:blue;
   #pauseButton {
     display: none;
   }
+  
+#timer{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height:100%;
+    width:50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ /* background-color: aqua;    */
+}
+#settimer{
+    width:90%;
+    height:15%;
+    
+
+    background-color: wheat;
+}
+#settimer input{
+    background-color:wheat;
+    /* border-radius: 50%; */
+    border: 2px solid green;
+    border-radius:2rem 2rem;
+    
+    width: 50%;
+    height:50%;
+}
+
+
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0e2c4c;
+  font-size: 70px;
+  width: 65%;
+  height: 40%;
+  background-color: #e7d9fc;
+  border-radius: 50%; 
+  
+  text-align: center;
+}
+
+#countdown-number{
+    width:95%;
+    height:95%;
+    border-radius:50%;
+
+    font-size: 40px;
+    font-weight: 500;
+    font-family:sans-serif;
+    position: relative;
+    top:35%;
+    
+}
+
+.action-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  width:90%;
+  height:21%;
+}
+.action-list button {
+  border: none;
+  background-color: #e7d9fc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}

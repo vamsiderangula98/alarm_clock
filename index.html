@@ -79,10 +79,38 @@
                             <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
                           </button>
                         </div>
+                    </div>
+                    <div id="timer">
+                        <h2>Set Timer:</h2>
+                        <div id="settimer">
+                            <form class="settimerfields">
+                            <input type="number" id="rtime" min="1" id="settimerinput">
+                            <button type="submit" class="btn btn-primary">Set Timer</button>
+                            </form>
+
+                            </div>
+                    <div id="countdown">
+                       
+                       <div id="countdown-number"> 
+                        
+                       </div>
                       </div>
+                      <div class="action-list">
+                        <button id="stoptimer">
+                          <img src="https://img.icons8.com/ios-glyphs/30/000000/pause--v1.png" />
+                        </button>
+                        <button id="starttimer">
+                          <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" />
+                        </button>
+                        <button id="resettimer">
+                          <img src="https://img.icons8.com/ios-glyphs/30/000000/stop.png" />
+                        </button>
+                      </div>
+                      <audio id="timeout_audio"></audio>
                 </div>
+            
             </div>
-        
+         
         <script  type="text/javascript" src="index.js">
 
         </script>
