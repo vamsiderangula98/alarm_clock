@@ -7,7 +7,9 @@
             <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="./style.css">
 
 
@@ -28,28 +30,37 @@
   
                 </div>
                 <div id="alarmsetting">
+
                     <h2>Set Alarm:</h2>
+                
+                  
                    <div id="alarmsettingfields">
-                       <input type="number" min="0" max="23" placeholder="HH">
-                       <input type="number" min="0" max="59" placeholder="MM">
-                       <input type="number" min="0" max="59" placeholder="SS">
+                       <form class="setAlarm">
+                       <input type="number" id="hours" min="0" max="23"  placeholder="HH" required>
+                       <input type="number" id="minutes" min="0" max="59" placeholder="MM" required>
+                       <input type="number" id="seconds" min="0" max="59"  placeholder="SS" required>
                     </div>
                     <br>
                     <br>
                      <div id="submitalarm">
-                    <button type="button" class="btn btn-success">Put Alarm</button>
-                    <button type="button" class="btn btn-danger">Stop Alarm</button>
+                    <button type="submit" value="putalarm" id="putalarm" class="btn btn-success" >Put Alarm</button>
+                    <button type="button" value="stopalarm" id="stopalarm" class="btn btn-danger">Stop Alarm</button>
                     </div>
+                </form>
                 </div>
-                <div id="alarmlist">
+                <div id="myalarms">
                     <h2>My Alarms:</h2>
+                    <ol type="1" id="alarmlist">
+                      
+                    </ol>
                     
 
 
                 </div>
-                <div id="mytunes">
-                    <h2>My Tunes:</h2>
-
+                <div id="stopwatch">
+                    <h2>stopwatch:</h2>
+                   
+                  
                 </div>
             </div>
         

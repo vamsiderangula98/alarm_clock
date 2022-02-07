@@ -6,6 +6,7 @@ html{
 
 #alarm{
     /* background-color:grey; */
+    background-color: aqua;
     display:flex;
     flex-direction:row;
      flex-wrap:wrap; 
@@ -33,7 +34,7 @@ html{
     color:#00807a;
 }
 #alarmsetting{
-    /* background-color:blue; */
+     
     width:40%;
     height:35%;
     margin:4px;
@@ -41,16 +42,19 @@ html{
     flex-grow:3;
 
 }
-#alarmlist{
+
+#myalarms{
     /* background-color:yellow; */
+    font-weight: bolder;
     width:40%;
     height:55%;
     margin:4px;
     padding:2px;
     flex-grow:3;
     order:2;
+    
 }
-#mytunes{
+#stopwatch{
     /* background-color: green; */
     width:40%;
     height:55%;
