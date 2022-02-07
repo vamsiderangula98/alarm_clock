@@ -37,7 +37,9 @@
                    <div id="alarmsettingfields">
                        <form class="setAlarm">
                        <input type="number" id="hours" min="0" max="23"  placeholder="HH" required>
+                       <span style="color:rgb(179, 255, 0);">:</span>
                        <input type="number" id="minutes" min="0" max="59" placeholder="MM" required>
+                       <span style="color:rgb(179, 255, 0);">:</span>
                        <input type="number" id="seconds" min="0" max="59"  placeholder="SS" required>
                     </div>
                     <br>
@@ -57,10 +59,27 @@
 
 
                 </div>
-                <div id="stopwatch">
-                    <h2>stopwatch:</h2>
+                <div id="stopwatchandtimer">
+                    
                    
+                    <div id="stopwatch">
+                        <h2> Stop Watch:</h2>
+                        <div class="circle">
+                          <span class="time" id="display">00:00:00</span>
+                        </div>
                   
+                        <div class="controls">
+                          <button class="buttonPlay">
+                            <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+                  
+                            <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+                          </button>
+                  
+                          <button class="buttonReset">
+                            <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+                          </button>
+                        </div>
+                      </div>
                 </div>
             </div>
         

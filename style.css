@@ -3,10 +3,13 @@ html{
     margin:0px;
     padding:0px;
 }
+h2{
+    color:lightgreen;
+}
 
 #alarm{
     /* background-color:grey; */
-    background-color: aqua;
+    background-color:darkblue;
     display:flex;
     flex-direction:row;
      flex-wrap:wrap; 
@@ -32,6 +35,11 @@ html{
     font-style:normal;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#00807a;
+    background-color:wheat;
+    border-radius:2rem 2rem;
+    width:55%;
+    border: 2px solid yellow;
+    text-align:center;
 }
 #alarmsetting{
      
@@ -42,19 +50,28 @@ html{
     flex-grow:3;
 
 }
+ol{
+    color:yellowgreen;
+}
+input{
+    border:2px solid yellow;
+    border-radius:2rem 2rem;
+    background-color: wheat;
+
+}
 
 #myalarms{
     /* background-color:yellow; */
     font-weight: bolder;
     width:40%;
-    height:55%;
+    height:57%;
     margin:4px;
-    padding:2px;
+    padding:4px;
     flex-grow:3;
     order:2;
     
 }
-#stopwatch{
+#stopwatchandtimer{
     /* background-color: green; */
     width:40%;
     height:55%;
@@ -64,3 +81,54 @@ html{
     order:1;
 
 }
+#stopwatch {
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 23px;
+    width: 80%;
+    padding-top: 25px;
+  }
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height:150px;
+    width: 150px;
+  
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+
+  .time {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+  }
+.controls {
+    display: flex;
+    justify-content: space-between;
+  
+    width: 187px;
+  }
+  
+  button {
+    cursor: pointer;
+background-color: transparent;
+color:blue;
+    padding: 0;
+    border: none;
+    margin: 0;
+    outline: none;
+  }
+  
+  
+  #playButton {
+    display: block;
+  }
+  
+  
+  #pauseButton {
+    display: none;
+  }
