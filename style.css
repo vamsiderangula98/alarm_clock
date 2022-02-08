@@ -1,238 +1,207 @@
-
 html{
-    margin:0px;
-    padding:0px;
-    font-size: 12px;
+      margin:0px;
+      padding:0px;
+      font-size: 12px;
+}
+body{
+      display:flex;
+      flex-direction: column;
+      justify-content:space-around;
+     
+    }
+h1{
+      text-align: center;
+      width: 500px;
+      height: 50px;
+      box-shadow: 5px 5px 10px 10px #888888;
+      margin:6px;
+      border: 5px solid whitesmoke;
+      border-radius:2rem 2rem;
+      align-self: center;
 }
  h2{
-    color:lightgreen;
-    
-   
+      color:lightgreen;  
 }
-
-
-ol{
-  font-size:30px;
-  text-decoration-color:orange;
+ol li{
+      font-size:30px;
+      color:orange;
 }
-
 #alarm{
-     /* background-color:grey;  */
-    background-color:darkblue;
-    display:flex;
-    flex-direction:row;
-     flex-wrap:wrap; 
-    position:relative;
-    left:3vw;
-    top:3vh;
-    width:95vw;
-    height:95vh;
-    border:2px solid black;
-    overflow: hidden;
-     border-radius:2rem 2rem; 
+      background-color:darkblue;
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap; 
+      position:relative;
+      left:2vw;
+      width:90vw;
+      height:85vh;
+      border:2px solid grey;
+      box-shadow: 5px 5px 15px 15px grey;
+      overflow: hidden;
+      border-radius:2rem 2rem; 
 }
-#displayclock{
-    
-    width:40%;
-    height:30%;
-    margin:2px;
-    padding:2px;
-   
-    flex-grow:1;
+#displayclock{    
+      width:40%;
+      height:30%;
+      margin:2px;
+      padding:2px;
+      flex-grow:1;
 }
 #timebox,#datebox{
-    font-size: 30px;
-    letter-spacing: 1px;
-    font-weight: bolder;
-    font-style:normal;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:#00807a;
-    background-color:wheat;
-    border-radius:2rem 2rem;
-    width:50%;
-    height:40px;
-    
-    border: 2px solid yellow;
-    text-align:center;
+      font-size: 30px;
+      letter-spacing: 1px;
+      font-weight: bolder;
+      font-style:normal;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color:#00807a;
+      background-color:wheat;
+      border-radius:2rem 2rem;
+      width:50%;
+      height:40px;    
+      border: 2px solid yellow;
+      text-align:center;
 }
 #alarmsetting{
- 
-    width:50%;
-    height:30%;
-    flex-grow:1;
-    margin:2px;
-    padding:2px;
-   
-  
-}
-ol{
-    color:yellowgreen;
+      width:50%;
+      height:30%;
+      flex-grow:1;
+      margin:2px;
+      padding:2px; 
 }
 .setAlarm input{
-    border:2px solid yellow;
-    border-radius:2rem 2rem;
-    background-color: wheat;
-  
-
+      border:2px solid yellow;
+      border-radius:2rem 2rem;
+      background-color: wheat;
 }
-
 #myalarms{
-    font-weight: bolder;
-    width:30%;
-    height:65%;
-    margin:4px;
-    padding:4px;
-    flex-grow:1;
-    order:2;
-    margin:2px;
-    padding:2px;
-    
+      font-weight: bolder;
+      width:30%;
+      height:65%;
+      margin:4px;
+      padding:4px;
+      flex-grow:1;
+      order:2;
+      margin:2px;
+      padding:2px;
 }
 #stopwatchandtimer{
-   
-    width:60%;
-    height:65%;
-    flex-grow:1;
-    order:1;
-    display: flex;
-    flex-direction: row;
-    margin:2px;
-    padding:2px;
-   
-
+      width:60%;
+      height:65%;
+      flex-grow:1;
+      order:1;
+      display: flex;
+      flex-direction: row;
+      margin:2px;
+      padding:2px;
 }
 #stopwatch {
-    display: grid;
-    justify-items: center;
-    grid-row-gap: 23px;
-    width:40%;
-    padding-top: 15px;
-    flex-grow: 1;
-    
+      display: grid;
+      justify-items: center;
+      grid-row-gap: 23px;
+      width:40%;
+      padding-top: 15px;
+      flex-grow: 1;
   }
-  .circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    height:130px;
-    width:130px;
-  
-    border: 2px solid white;
-    border-radius: 50%;
+.circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:130px;
+      width:130px;
+      border: 2px solid white;
+      border-radius: 50%;
   }
-
-  .time {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 300;
-    font-size: 20px;
-    color: white;
+.time {
+      font-family: "Roboto Mono", monospace;
+      font-weight: 300;
+      font-size: 20px;
+      color: white;
   }
 .controls {
-    display: flex;
-    justify-content: space-between;
-  
-    width: 187px;
+      display: flex;
+      justify-content: space-between;
+      width: 187px;
   }
-  
-  button {
-    cursor: pointer;
-background-color: transparent;
-color:blue;
-    padding: 0;
-    border: none;
-    margin: 0;
-    outline: none;
+button {
+      cursor: pointer;
+      background-color: transparent;
+      color:blue;
+      padding: 0;
+      border: none;
+      margin: 0;
+      outline: none;
   }
-  
-  
-  #playButton {
-    display: block;
+#playButton {
+      display: block;
   }
-  
-  
-  #pauseButton {
-    display: none;
+#pauseButton {
+      display: none;
   }
-  
 #timer{
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height:100%;
-    width:40%;
-    flex-grow:1;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+      display: flex;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      height:100%;
+      width:40%;
+      flex-grow:1;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
     
- 
-}
+ }
+ #timer h2{
+   margin-left:20%;
+ }
 #settimer{
-    width:90%;
-    height:18%;
-     text-align: center;
+      width:90%;
+      height:18%;
+      text-align: center;
 }
-    #settimer>h2{
+#settimer>h2{
       text-align: center;
 }
 #rtime{
-    background-color:wheat;
-  
-    border: 2px solid green;
-    border-radius:2rem 2rem;
-    text-align: center;
-    width:25%;
-    height:1 em;
-
+      background-color:wheat;
+      border: 2px solid green;
+      border-radius:2rem 2rem;
+      text-align: center;
+      width:25%;
+      height:1 em;
 }
-
-
-
-
 #countdown {
-  position:relative;
-  left=20%;
-  
-  color: #0e2c4c;
-  font-size: 70px;
-  width:130px;
-  height:130px;
-  background-color: #e7d9fc;
-  border-radius: 50%; 
-  align-self: center;
-  
+      position:relative;
+      color: #0e2c4c;
+      font-size: 70px;
+      width:130px;
+      height:130px;
+      background-color: #e7d9fc;
+      border-radius: 50%; 
+      align-self: center;
+      margin-bottom: 10px;
 }
-
 #countdown-number{
-    width:inherit;
-    height:inherit;
-    border-radius:50%;
-    font-size: 40px;
-    font-weight: 500;
-    font-family:sans-serif;
-    position: relative;
-    padding:35px 0px 0px 32px;
-
-    
+      width:inherit;
+      height:inherit;
+      border-radius:50%;
+      font-size: 40px;
+      font-weight: 500;
+      font-family:sans-serif;
+      padding:35px 0px 0px 32px;  
 }
-
 .action-list {
-  display:flex;
-  margin:5px;
-  width:90%;
-  height:21%;
-  align-content: center;
-  justify-content: space-around;
-  
-
+      display:flex;
+      margin:2px;
+      width:90%;
+      height:21%;
+      align-content: center;
+      justify-content: space-around;
 }
 .action-list button {
-  border: none;
-  background-color: #e7d9fc;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  background-color:pink;
+      border: none;
+      background-color: #e7d9fc;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      background-color:pink;
 }

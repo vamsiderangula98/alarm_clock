@@ -11,62 +11,48 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="./style.css">
-
-
-
     </head>
     <body>
-            <div id="alarm">
-                <div id="displayclock">
-                    <h2>Current Time:</h2>
-                    <div id="timebox">
-
-
-                    </div>
-                     <h2>DATE:</h2>
-                    <div id="datebox">
-
-                    </div> 
-  
-                </div>
-                <div id="alarmsetting">
-
-                    <h2>Set Alarm:</h2>
-                
-                  
-                   <div id="alarmsettingfields">
-                       <form class="setAlarm">
-                       <input type="number" id="hours" min="0" max="23"  placeholder="HH" required>
-                       <span style="color:rgb(179, 255, 0);">:</span>
-                       <input type="number" id="minutes" min="0" max="59" placeholder="MM" required>
-                       <span style="color:rgb(179, 255, 0);">:</span>
-                       <input type="number" id="seconds" min="0" max="59"  placeholder="SS" required>
-                    </div>
-                    <br>
-                    <br>
-                     <div id="submitalarm">
-                    <button type="submit" value="putalarm" id="putalarm" class="btn btn-success" >Put Alarm</button>
-                    <button type="button" value="stopalarm" id="stopalarm" class="btn btn-danger">Stop Alarm</button>
-                    </div>
-                </form>
-                </div>
-                <div id="myalarms">
-                    <h2>My Alarms:</h2>
-                    <ol type="1" id="alarmlist">
+      <h1>ALARM CLOCK</h1>
+          <div id="alarm">
+              <div id="displayclock">
+                  <h2>Current Time</h2>
+                  <div id="timebox">
+                  </div>
+                  <h2>DATE</h2>
+                  <div id="datebox">
+                  </div>
+              </div>
+              <div id="alarmsetting">
+                  <h2>Set Alarm</h2>
+                  <div id="alarmsettingfields">
+                      <form class="setAlarm">
+                            <input type="number" id="hours" min="0" max="23"  placeholder="HH" required>
+                            <span style="color:rgb(179, 255, 0);">:</span>
+                            <input type="number" id="minutes" min="0" max="59" placeholder="MM" required>
+                            <span style="color:rgb(179, 255, 0);">:</span>
+                            <input type="number" id="seconds" min="0" max="59"  placeholder="SS" required>
+                  </div>
+                  <br>
+                  <br>
+                  <div id="submitalarm">
+                            <button type="submit" value="putalarm" id="putalarm" class="btn btn-success" >Put Alarm</button>
+                            <button type="button" value="stopalarm" id="stopalarm" class="btn btn-danger">Stop Alarm</button>
+                  </div>
+                      </form>
+              </div>
+              <div id="myalarms">
+                  <h2>My Alarms</h2>
+                  <ol type="1" id="alarmlist">
                       
 
-                    </ol>
-                    
-
-
-                </div>
-                <div id="stopwatchandtimer">
-                    
-                   
+                  </ol>
+              </div>
+              <div id="stopwatchandtimer">                                       
                     <div id="stopwatch">
-                        <h2> Stop Watch:</h2>
+                        <h2> Stop Watch</h2>
                         <div class="circle">
-                          <span class="time" id="display">00:00:00</span>
+                             <span class="time" id="display">00:00:00</span>
                         </div>
                   
                         <div class="controls">
@@ -82,38 +68,33 @@
                         </div>
                     </div>
                     <div id="timer">
-                        <h2>Timer:</h2>
+                        <h2>Timer</h2>
                         <div id="settimer">
                             <form class="settimerfields">
-                            <input type="number" id="rtime" min="1" id="settimerinput">
-                            <button type="submit" class="btn btn-primary">Set Timer</button>
-                            </form>
-
-                            </div>
-                    <div id="countdown">
-                       
-                       <div id="countdown-number"> 
-                        
-                       </div>
-                      </div>
-                      <div class="action-list">
-                        <button id="stoptimer">
-                          <img src="https://img.icons8.com/ios-glyphs/30/000000/pause--v1.png" />
-                        </button>
-                        <button id="starttimer">
-                          <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" />
-                        </button>
-                        <button id="resettimer">
-                          <img src="https://img.icons8.com/ios-glyphs/30/000000/stop.png" />
-                        </button>
-                      </div>
+                                <input type="number" id="rtime" min="1" id="settimerinput">
+                                <button type="submit" class="btn btn-primary">Set Timer</button>                           
+                            </form>                        
+                        </div>
+                        <div id="countdown">                       
+                          <div id="countdown-number">                         
+                          </div>
+                        </div>
+                        <div class="action-list">
+                            <button id="stoptimer">
+                              <img src="https://img.icons8.com/ios-glyphs/30/000000/pause--v1.png" />
+                            </button>
+                            <button id="starttimer">
+                              <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" />
+                            </button>
+                            <button id="resettimer">
+                              <img src="https://img.icons8.com/ios-glyphs/30/000000/stop.png" />
+                            </button>
+                        </div>
                       <audio id="timeout_audio"></audio>
-                </div>
-            
-            </div>
-         
-        <script  type="text/javascript" src="index.js">
-
-        </script>
-    </body>
+                    </div>  
+                </div>                        
+          </div>
+<script  type="text/javascript" src="index.js">
+</script>
+  </body>
 </html>
