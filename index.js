@@ -20,7 +20,7 @@ stopbtn.addEventListener('click', () => {
 var update = setInterval(function() {
     today = new Date();
     currentTime = format(today.getHours()) + ':' + format(today.getMinutes()) + ':' + format(today.getSeconds());
-    currentDate = format(today.getHours()) + '/' + format(today.getMonth()+1) + '/' + format(today.getDate());
+    currentDate = format(today.getFullYear()) + '/' + format(today.getMonth()+1) + '/' + format(today.getDate());
     document.querySelector('#timebox').innerHTML = currentTime;
     document.querySelector('#datebox').innerHTML = currentDate;
     //check if alarm present in alarm array
